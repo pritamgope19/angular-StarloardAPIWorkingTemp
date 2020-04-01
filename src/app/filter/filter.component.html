@@ -1,0 +1,13 @@
+<h4>
+    <strong>Filters  </strong>
+    <span>
+        <button class="btn btn-info  btn-sm" type="button" (click) = "searchClick()">Check</button>
+    </span>
+</h4>
+<form>
+        <p><strong>Search: </strong> </p>
+        <input type="text" name="searchValue" class="form-control" placeholder="Type Something. . ." autofocus [(ngModel)]="searchValue">
+        <p *ngIf=" searchValue.length != 0"> Searching For: {{ searchValue }}</p>
+
+</form>
+

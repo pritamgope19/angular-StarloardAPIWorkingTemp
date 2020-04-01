@@ -1,0 +1,16 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <app-header></app-header>
+</div>
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-xs-6 col-sm-3 co-md-3">
+      <app-filter (search)="onSearch($event)"></app-filter>
+    </div>
+    <div class="col-xs-6 col-sm-3 col-md-9">
+      <app-movie-list [searchValue] = "value"></app-movie-list>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>
